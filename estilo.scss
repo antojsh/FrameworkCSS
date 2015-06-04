@@ -1,0 +1,166 @@
+$sizes:(
+	telefono:600px,
+	tablet:768px,
+	web: 1025px,
+	tv:1400px
+);
+@each $size,$screen in $sizes{
+	@media all and (min-width:#{$screen}){
+		@for $i from 1 through 20 {
+			.#{$size}-#{$i*5}{
+				width:$i*5%;
+				float: left;
+				border-sizing: border-box;
+					
+			}
+		}
+	}
+
+}
+*{
+	padding:0;
+	margin:0;
+	box-sizing:border-box;
+	list-style:none;
+	text-decoration:none;
+	outline:1px solid #dadada;
+
+}
+a{
+	color:inherit;
+}
+header{
+	width:90%;
+	height:60px;
+	
+	margin:0 auto;
+	position:relative;
+	@media screen and (max-width: 768px){
+		width: 100%;
+	}
+
+}
+header.full{
+	width:100%;
+}
+
+header nav.left{
+	width:70%;
+	height:100%;
+	float:left;
+	position:relative;
+	
+	@media screen and (max-width: 768px){
+		position:fixed;
+		
+	}
+}
+header nav.left >ul{
+	height:100%;
+	display:flex;
+	justify-content:space-around;
+	align-items:center;
+	flex-direction:row;
+	@media screen and (max-width: 768px){
+		flex-direction:column;
+		align-items:flex-start;
+		justify-content: flex-start;
+	}
+	
+}
+header nav.left >ul >li{
+	
+	width:100%;
+	padding:10px;
+}
+header nav.left >ul >li >a{
+	display:block;
+	padding:10px;
+	
+	text-align:center;
+}
+
+
+
+
+header nav.right{
+	width:70%;
+	height:100%;
+	float:right;
+	position:relative;
+	
+	@media screen and (max-width: 768px){
+		position:fixed;
+		top: 0;
+		right: 0;
+		
+	}
+}
+header nav.right >ul{
+	height:100%;
+	display:flex;
+	justify-content:space-around;
+	align-items:center;
+	flex-direction:row;
+	@media screen and (max-width: 768px){
+		flex-direction:column;
+		align-items:flex-start;
+		justify-content: flex-start;
+	}
+	
+}
+header nav.right >ul >li{
+	
+	width:100%;
+	padding:10px;
+}
+header nav.right >ul >li >a{
+	display:block;
+	padding:10px;
+	
+	text-align:center;
+}
+
+
+
+
+
+header nav.center{
+	width:90%;
+	height:100%;
+	margin:0 auto;
+	position:relative;
+	
+	@media screen and (max-width: 768px){
+		position:fixed;
+		top: 0;
+		width: 70%;
+		
+		
+	}
+}
+header nav.center >ul{
+	height:100%;
+	display:flex;
+	justify-content:space-around;
+	align-items:center;
+	flex-direction:row;
+	@media screen and (max-width: 768px){
+		flex-direction:column;
+		align-items:flex-start;
+		justify-content: flex-start;
+	}
+	
+}
+header nav.center >ul >li{
+	
+	width:100%;
+	padding:10px;
+}
+header nav.center >ul >li >a{
+	display:block;
+	padding:10px;
+	
+	text-align:center;
+}
+
