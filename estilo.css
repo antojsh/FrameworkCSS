@@ -565,7 +565,9 @@ header nav.center > ul > li > a {
 
 section {
   width: 90%;
+  height: auto;
   margin: 0 auto;
+  margin-top: 20px;
 }
 
 section.full {
