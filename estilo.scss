@@ -12,7 +12,7 @@ $padding-article:5px;
 				width:$i*5%;
 				float: left;
 				border-sizing: border-box;
-					
+				position: relative;
 			}
 		}
 	}
@@ -30,6 +30,7 @@ $padding-article:5px;
 a{
 	color:inherit;
 }
+
 header{
 	width:90%;
 	height:60px;
@@ -184,6 +185,7 @@ section article{
 	text-align:center;
 	padding:$padding-article;
 	margin:0;
-	background:red;
-	outline:5px solid blue;
+	height:300px;
+	//outline:1px solid blue;
 }
+@import "desarrollo.css";
